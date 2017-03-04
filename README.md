@@ -131,36 +131,52 @@ We're now going to update your local code to point to this database. We'll creat
   ```
   cf push
   ```
-6. Useful Cloudfront CLI comannds
+
+## 7. Cloudfront CLI reference
   
-Display recent logs:
+1. List of useful CLI commands
+
+  Display recent logs:
   ```
   cf logs <Your-App-Name> --recent
   ```
-List all apps in the taget space:
+  List all apps in the taget space:
   ```
   cf apps 
   ```
-Switch to a space where you want to deploy your app:
+  Switch to a space where you want to deploy your app:
   ```
   cf target -s <space_name>
   ```
-Deploy the application:
+  Deploy the application:
   ```
   cf push APPLICATION_NAME
   ```
-Set the API endpoint:
+  Set the API endpoint:
   ```
   cf api <API-endpoint>
   ```
-API-endpoint:
+  API-endpoint:
   ```
   https://api.ng.bluemix.net         US South
   https://api.eu-gb.bluemix.net      United Kingdom
   https://api.au-syd.bluemix.net     Sydney
   ```
-Login to your Bluemix accout:
+  Login to your Bluemix accout:
   ```
   cf login
   ```
 
+2. Installing the CLI
+**Mac OS X** (using Homebrew):
+  ```
+  brew tap cloudfoundry/tap
+  brew install cf-cli
+  ```
+**Debian** and **Ubuntu** Linux:
+  ```
+  $ wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+  $ echo "deb http://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+  $ sudo apt-get update
+  $ sudo apt-get install cf-cli
+  ```

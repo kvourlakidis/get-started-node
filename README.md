@@ -131,3 +131,36 @@ We're now going to update your local code to point to this database. We'll creat
   ```
   cf push
   ```
+6. Useful Cloudfront CLI comannds
+  
+Display recent logs:
+  ```
+  cf logs <Your-App-Name> --recent
+  ```
+List all apps in the taget space:
+  ```
+  cf apps 
+  ```
+Switch to a space where you want to deploy your app:
+  ```
+  cf target -s <space_name>
+  ```
+Deploy the application:
+  ```
+  cf push APPLICATION_NAME
+  ```
+Set the API endpoint:
+  ```
+  cf api <API-endpoint>
+  ```
+API-endpoint:
+  ```
+  https://api.ng.bluemix.net         US South
+  https://api.eu-gb.bluemix.net      United Kingdom
+  https://api.au-syd.bluemix.net     Sydney
+  ```
+Login to your Bluemix accout:
+  ```
+  cf login
+  ```
+

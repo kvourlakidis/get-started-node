@@ -134,7 +134,7 @@ We're now going to update your local code to point to this database. We'll creat
 
 ## 7. Cloudfront CLI reference
   
-1. List of useful CLI commands
+1. Useful CLI commands
 
   Display recent logs:
   ```
@@ -169,13 +169,13 @@ We're now going to update your local code to point to this database. We'll creat
 
 2. Installing the CLI
 
-**Mac OS X** (using Homebrew):
+  **Mac OS X** (using Homebrew):
   ```sh
   brew tap cloudfoundry/tap
   brew install cf-cli
   ```
 
-**Debian** and **Ubuntu** Linux:
+  **Debian** and **Ubuntu** Linux:
   ```sh
   $ wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
   $ echo "deb http://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
@@ -183,4 +183,4 @@ We're now going to update your local code to point to this database. We'll creat
   $ sudo apt-get install cf-cli
   ```
 
-For more information see [Cloud Foundry CLI] (https://github.com/cloudfoundry/cli#downloads)
+  For more information see [Cloud Foundry CLI] (https://github.com/cloudfoundry/cli#downloads)
